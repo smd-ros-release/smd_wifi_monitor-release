@@ -1,0 +1,8 @@
+<library path="lib/libwifimon">
+
+  <class name="smd_wifi_monitor/wifimon" type="wifimon::WifiMon" base_class_type="nodelet::Nodelet">
+    <description>Basic Wifi monitoring nodelet</description>
+  </class>
+
+</library>
+

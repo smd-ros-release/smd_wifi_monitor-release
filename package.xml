@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package>
+  <name>smd_wifi_monitor</name>
+  <version>0.0.2</version>
+  <description>ROS device monitor for nl80211-compatible wireless NICs</description>
+
+  <maintainer email="logans@cottsay.net">Scott K Logan</maintainer>
+
+  <license>BSD</license>
+
+  <!-- <url type="website">http://ros.org/wiki/smd_wifi_monitor</url> -->
+
+  <author email="logans@cottsay.net">Scott K Logan</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>diagnostic_updater</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>libnl-3-dev</build_depend>
+  <run_depend>diagnostic_updater</run_depend>
+  <run_depend>gencpp</run_depend>
+  <run_depend>pluginlib</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>nodelet</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>libnl-3</run_depend>
+
+  <export>
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+  </export>
+</package>
